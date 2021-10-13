@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Country</th>
+            <th>State</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in ViewBag.user)
+        {
+        <tr>
+            <td>@item.name</td>
+            <td>@item.salary</td>
+            <td>@item.country</td>
+            <td>@item.state</td>
+        </tr>
+        }
+    </tbody>
+    </table>
+
