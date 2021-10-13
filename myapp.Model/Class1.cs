@@ -9,5 +9,6 @@ namespace myapp.Model
     public class Class1
     {
         int id { get; set; }
+        string name { get; set; }
     }
 }
